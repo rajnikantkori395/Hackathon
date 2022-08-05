@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+function show(some) {
+document.getElementById("demo").innerHTML = some
+}
+function myFirst() {
+show("Hello")
+}
+function mySecond() {
+show("Goodbye")
+}
+myFirst();
+mySecond();
+</script>
+</body>
+</html>
+
+Output: - Goodbye
+
+Asynchronous: -
+
+It is a feature of JavaScript Programming. It states that other functions do not have 
+to wait to complete one execution. More than one function can execute simultaneously.
+For example
+function func1(){
+console.log(“First”);
+}
+function func2(){
+console.log(“second”);
+}
+setTimeout(func1,5000);
+func2();
+output:-
+second
+first
+Callback function: -
+A callback is a function passed as an argument to another function. This
+allows a function to call another function. A callback function can run after 
+another function has finished.
+const message = function() { 
+ console.log("runs after 3 seconds");
+}
+setTimeout(message, 3000);
+
